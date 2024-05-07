@@ -21,7 +21,7 @@ console.log(divs);
 const sameDivs = document.querySelectorAll("div");
 console.log(sameDivs);
 */
-const evenDivs = view1.querySelectorAll("div: nth-of-type(2n)");
+const evenDivs = view1.querySelectorAll("div:nth-of-type(2n)");
 console.log(evenDivs);
 
 
