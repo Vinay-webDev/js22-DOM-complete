@@ -40,7 +40,7 @@ nav.innerHTML = `<h1>Hello!<h1/>`;
 console.log(nav); */
 
 // DOM - document object model;
-
+/*
 const view1 = document.getElementById("view1");
 console.log(view1);
 const view2 = document.querySelector("#view2");
@@ -62,13 +62,13 @@ const evenDivs = view1.querySelectorAll("div:nth-of-type(2n)");
 console.log(evenDivs);
 // to select only odd divs
 const oddDivs = view1.querySelectorAll("div:nth-of-type(2n+1)");
-console.log(oddDivs);
+console.log(oddDivs); */ /*
 
 for (i = 0; i < evenDivs.length; i++) {
     evenDivs[i].style.backgroundColor = "yellow";
-    /*evenDivs[i].style.width = "200px";
-    evenDivs[i].style.height = "200px";*/
-}
+    //evenDivs[i].style.width = "200px";
+    //evenDivs[i].style.height = "200px";
+} 
 for ( i = 0; i < oddDivs.length; i++) {
     oddDivs[i].style.backgroundColor = "red";
     oddDivs[i].style.width = "200px";
@@ -82,18 +82,26 @@ const navBar = document.querySelector("nav");
 // **** innerHTML *****
 navBar.innerHTML = "<h1> Hello again! </h1> <p> this should align right </p>";
 console.log(navBar);
-navBar.style.justifyContent = "flex-between";
+navBar.style.justifyContent = "flex-between"; */
 
-
-
-
-
-
-
-
-
-
-
-
+// DOM tree navigation
+const evenDivs = view1.querySelectorAll("div:nth-of-type(2n)");
+for (i = 0; i < evenDivs.length; i++) {
+    evenDivs[i].style.backgroundColor = "green";
+}
+console.log(evenDivs[0])
+console.log(evenDivs[0].parentElement);
+console.log(evenDivs[0].parentElement.children);
+console.log(evenDivs[0].parentElement.childNodes);
+console.log(evenDivs[0].parentElement.hasChildNodes());
+console.log(evenDivs[0].parentElement.lastChild);
+console.log(evenDivs[0].parentElement.lastElementChild);
+console.log(evenDivs[0].parentElement.firstChild);
+console.log(evenDivs[0].parentElement.firstElementChild);
+console.log(evenDivs[0].nextSibling);
+console.log(evenDivs[0].nextElementSibling);
+console.log(evenDivs[0].previousSibling);
+console.log(evenDivs[0].previousElementSibling);
+console.log(evenDivs[0].nextElementSibling.nextElementSibling);
 
 
